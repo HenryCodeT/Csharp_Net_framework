@@ -10,22 +10,43 @@ namespace ConsoleApp3
     {
         static void Main(string[] args)
         {
-            int year = Convert.ToInt16("12");
-            double decimales = 2.3;
-            string nombre = "henry";
-            string nombres = "pedro vasquez";
-            decimal decimals = 2.07m;
-            float flotante = 8.9f;
-            bool booleano = false;
-            char caracter = 'R';
-            Decimal decimal1 = 24.5m;
+            int valor1 = 9;
+            int valor2 = 8;
+            double valor3 = 10;
+            double valor4 = 10;
+            var data = valor1 != valor2;
+            String name;
+            //Estructura if y los operadores condicionales
+            if (data)
+            {
+                Console.WriteLine("Uno "+data);
+            }
+            if (valor1 != valor2 || valor1 == valor2)
+            {
+                Console.WriteLine("Dos " +  data);
+            }
+            if (valor1 != valor2 && valor3 == valor4)
+            {
+                Console.WriteLine("Tres " + data);
+            }
+            //Estructura if y los operadores condicionales
+            if (valor1 != valor2 && valor1 == valor2)
+            {
+                Console.WriteLine("Dos " + data);
+            }
+            else
+            {
+                Console.WriteLine("Else");
+            }
 
-            Console.WriteLine(nombres +" Hello Henry {0}, {1}, {2}, {3}, {4}, {5}, {6}, {7}", year, decimales, nombre, decimals, flotante, booleano, caracter, decimal1);
-            
+            // Operador condicional
+            name = data ? "Henry" : "Pedro";
+            Console.WriteLine(name);
+
+            var count = 1;
+            Console.WriteLine(count);
+            Console.WriteLine(count++);
             Console.ReadLine();
         }
-        // float 7 digitos 32 bits
-        // double 15-16 digitos 64 bits
-        // decimal 28-29 digitos 128 bits
     }
 }
